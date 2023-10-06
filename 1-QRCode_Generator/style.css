@@ -97,7 +97,7 @@ body
     75%{
         transform: translateX(2px);
     }
-    1000%{
+    100%{
         transform: translateX(0);
     }
     
