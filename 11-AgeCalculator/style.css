@@ -68,3 +68,13 @@
     height: 24px; /* Adjust the height as needed */
     cursor: pointer;
 }
+#result
+{
+    font-size: 20px;
+
+}
+#result span
+{
+    color: #ffff76;
+
+}
