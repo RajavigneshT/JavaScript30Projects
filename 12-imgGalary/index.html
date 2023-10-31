@@ -27,5 +27,30 @@
 
     </div>
     
+    <script>
+
+        let scrollContainter=document.querySelector(".gallery");
+        let backBtn=document.getElementById("backBtn");
+        let nextBtn=document.getElementById("nextBtn");
+
+        scrollContainter.addEventListener("wheel",(evt)=>{
+
+            evt.preventDefault();
+            scrollContainter.scrollLeft+=evt.deltaY;
+             });
+             nextBtn.addEventListener("click",()=>
+             {
+                scrollContainter.style.scrollBehavior="smooth";
+                scrollContainter.scrollLeft +=900;
+                scrollContainter.style.scrollBehavior="auto";
+
+             });
+             backBtn.addEventListener("click",()=>
+             {
+                scrollContainter.style.scrollBehavior="smooth";
+                scrollContainter.scrollLeft-=900;
+             });
+
+    </script>
 </body>
 </html>
